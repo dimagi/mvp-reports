@@ -1,4 +1,4 @@
-from django.template.loader import render_to_string
+afrom django.template.loader import render_to_string
 from django.utils.safestring import mark_safe
 import logging
 import numpy
@@ -145,6 +145,7 @@ class CHWManagerReport(GenericTabularReport, MVPIndicatorReport, DatespanMixin):
                     dict(slug="under5_fever_rdt_positive_medicated_proportion", expected="100%"),
                     dict(slug="under5_diarrhea", expected="--"),
                     dict(slug="under5_diarrhea_ors_proportion", expected="100%"),
+                    dict(slug="under1_immunized_proportion", expected="100%"),
                     dict(slug="muac_routine_proportion", expected="100%"),
                     # todo better indicator def needed
 #                    dict(slug="num_active_gam", expected="--"),
